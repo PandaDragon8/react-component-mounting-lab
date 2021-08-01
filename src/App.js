@@ -4,16 +4,30 @@ import Timer from './Timer'
 
 class App extends Component {
 
-  //no props being used here, so we can use the shorthand declaration of state
-  state = {
-    timerIDs: []
+  // //no props being used here, so we can use the shorthand declaration of state
+  // state = {
+  //   timerIDs: []
+  // }
+
+  constructor() {
+    super()
+    this.state = {
+      timerIDs:[]
+    }
+
+    console.log("APP constructor") // this.handleAddTimer()
   }
 
-
   //Your code here:
+componentDidMount() {
+  this.handleAddTimer()
 
+  console.log("APP componentDidMount")
+}
 
+componentWillUnmount() {
 
+}
 
 
 
